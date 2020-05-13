@@ -12,6 +12,13 @@
   </head>
 
   <body>
+
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+       <%= link_to restaurants_path, class: "navbar-brand" do  %>
+        <i class="fas fa-utensils"> Restaurants</i>
+       <% end %>
+       <%= link_to "Create restaurant", new_restaurant_path, class: "nav-item nav-link btn btn-primary" %>
+    </nav>
     <%= yield %>
   </body>
 </html>
